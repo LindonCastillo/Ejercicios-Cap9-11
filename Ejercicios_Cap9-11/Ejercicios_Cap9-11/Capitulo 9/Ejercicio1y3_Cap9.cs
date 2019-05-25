@@ -177,9 +177,35 @@ namespace Ejercicios_Cap9_11.Capitulo_9
             bool existe = false;
             int ind = 0;
             string nombreM = Convert.ToString(mNombre_textBox.Text);
-            for (int i = 0; i < cont1; i++)
+            for (int i = 0; i < cont2; i++)
             {
                 if (nombreM == Mascota[i].NombreMascota)
+                {
+                    existe = true;
+                    ind = i;
+                    break;
+                }
+            }
+
+            if (existe == false)
+            {
+                MessageBox.Show("Este dueño y mascota no existe", "Fallo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                LlenarCampos2(ind);
+                MessageBox.Show("Se encontro el dueño y mascota", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void Buscar3_button_Click(object sender, EventArgs e)
+        {
+            bool existe = false;
+            int ind = 0;
+            string nombreDu = Convert.ToString(dNombre_textBox.Text);
+            for (int i = 0; i < cont2; i++)
+            {
+                if (nombreDu == Mascota[i].NombreD)
                 {
                     existe = true;
                     ind = i;

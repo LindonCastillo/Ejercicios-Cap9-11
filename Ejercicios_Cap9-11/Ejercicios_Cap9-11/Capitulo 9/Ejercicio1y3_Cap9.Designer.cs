@@ -56,6 +56,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Buscar1_button = new System.Windows.Forms.Button();
             this.Buscar2_button = new System.Windows.Forms.Button();
+            this.Buscar3_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadProducto_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecioProducto_numericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
@@ -148,6 +149,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.Buscar3_button);
             this.panel1.Controls.Add(this.Buscar2_button);
             this.panel1.Controls.Add(this.Guardar2_button);
             this.panel1.Controls.Add(this.Nuevo2_button);
@@ -294,7 +296,7 @@
             // 
             this.dNombre_textBox.Location = new System.Drawing.Point(101, 213);
             this.dNombre_textBox.Name = "dNombre_textBox";
-            this.dNombre_textBox.Size = new System.Drawing.Size(233, 20);
+            this.dNombre_textBox.Size = new System.Drawing.Size(166, 20);
             this.dNombre_textBox.TabIndex = 12;
             // 
             // label6
@@ -346,6 +348,17 @@
             this.Buscar2_button.Text = "Buscar";
             this.Buscar2_button.UseVisualStyleBackColor = true;
             this.Buscar2_button.Click += new System.EventHandler(this.Buscar2_button_Click);
+            // 
+            // Buscar3_button
+            // 
+            this.Buscar3_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar3_button.Location = new System.Drawing.Point(273, 208);
+            this.Buscar3_button.Name = "Buscar3_button";
+            this.Buscar3_button.Size = new System.Drawing.Size(61, 26);
+            this.Buscar3_button.TabIndex = 27;
+            this.Buscar3_button.Text = "Buscar";
+            this.Buscar3_button.UseVisualStyleBackColor = true;
+            this.Buscar3_button.Click += new System.EventHandler(this.Buscar3_button_Click);
             // 
             // Ejercicio1y3_Cap9
             // 
@@ -405,5 +418,6 @@
         private System.Windows.Forms.Button Nuevo2_button;
         private System.Windows.Forms.Button Buscar2_button;
         private System.Windows.Forms.Button Buscar1_button;
+        private System.Windows.Forms.Button Buscar3_button;
     }
 }
