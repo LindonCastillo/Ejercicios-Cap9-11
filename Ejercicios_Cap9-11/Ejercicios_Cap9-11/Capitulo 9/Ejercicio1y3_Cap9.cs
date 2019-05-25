@@ -51,6 +51,34 @@ namespace Ejercicios_Cap9_11.Capitulo_9
             }
         }
 
+ 
+        
+        private void Limpiar1()
+        {
+            NombreProducto_textBox.Text = string.Empty;
+            PrecioProducto_numericUpDown.Value = 0;
+            CantidadProducto_numericUpDown.Value = 0;
+        }
+
+        private void Limpiar2()
+        {
+            mNombre_textBox.Text = string.Empty;
+            mEspecie_textBox.Text = string.Empty;
+            dNombre_textBox.Text = string.Empty;
+            dEdad_textBox.Text = string.Empty;
+            dCedula_maskedTextBox.Text = string.Empty;
+        }
+
+        private void Nuevo1_button_Click(object sender, EventArgs e)
+        {
+            Limpiar1();
+        }
+
+        private void Nuevo2_button_Click(object sender, EventArgs e)
+        {
+            Limpiar2();
+        }
+
         private void Guardar1_button_Click(object sender, EventArgs e)
         {
             if(NombreProducto_textBox.Text == string.Empty|| PrecioProducto_numericUpDown.Value <= 0|| CantidadProducto_numericUpDown.Value <= 0)
@@ -64,18 +92,31 @@ namespace Ejercicios_Cap9_11.Capitulo_9
                 int cantidad = Convert.ToInt32(CantidadProducto_numericUpDown.Value);
 
                 Productos producto = new Productos(nombre, precio, cantidad);
+                Limpiar1();
                 MessageBox.Show("El producto se guardo correctamente", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
-
-        private void Nuevo1_button_Click(object sender, EventArgs e)
+        private void Guardar2_button_Click(object sender, EventArgs e)
         {
-            NombreProducto_textBox.Text = string.Empty;
-            PrecioProducto_numericUpDown.Value = 0;
-            CantidadProducto_numericUpDown.Value = 0;
-        }
+            if (mNombre_textBox.Text == string.Empty || mEspecie_textBox.Text == string.Empty|| dNombre_textBox.Text == string.Empty|| dEdad_textBox.Text == string.Empty|| string.IsNullOrWhiteSpace(dCedula_maskedTextBox.Text))
+            {
+                MessageBox.Show("No puede dejar campos Vacios", "Fallo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else 
+            {
+                //utilizo M o D para indicar que dicho campo pertenece al dueño o la mascota
+                string nombreM = Convert.ToString(mNombre_textBox.Text);
+                string especieM = Convert.ToString(mEspecie_textBox.Text);
+                string nombreD = Convert.ToString(dNombre_textBox.Text);
+                string edadD = Convert.ToString(dEdad_textBox.Text);
+                string cedulaD = Convert.ToString(dCedula_maskedTextBox.Text);
 
-        //Productos[] Producto = new Productos[];
+                Mascotas mascota = new Mascotas(nombreM,especieM,nombreD,edadD,cedulaD);
+                Limpiar2();
+                MessageBox.Show("La Mascota y su Dueño se guardaron correctamente", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
     }
 }

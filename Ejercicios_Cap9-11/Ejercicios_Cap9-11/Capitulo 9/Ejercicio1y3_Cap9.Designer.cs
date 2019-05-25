@@ -42,15 +42,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.mEspecie_textBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.dCedula_maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.mNombre_textBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dEdad_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.D_textBox = new System.Windows.Forms.TextBox();
+            this.dNombre_textBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -150,15 +150,15 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.mEspecie_textBox);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.Controls.Add(this.dCedula_maskedTextBox);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.mNombre_textBox);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.dEdad_textBox);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.D_textBox);
+            this.panel1.Controls.Add(this.dNombre_textBox);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(381, 12);
             this.panel1.Name = "panel1";
@@ -174,6 +174,7 @@
             this.Guardar2_button.TabIndex = 25;
             this.Guardar2_button.Text = "Guardar";
             this.Guardar2_button.UseVisualStyleBackColor = true;
+            this.Guardar2_button.Click += new System.EventHandler(this.Guardar2_button_Click);
             // 
             // Nuevo2_button
             // 
@@ -184,6 +185,7 @@
             this.Nuevo2_button.TabIndex = 24;
             this.Nuevo2_button.Text = "Nuevo";
             this.Nuevo2_button.UseVisualStyleBackColor = true;
+            this.Nuevo2_button.Click += new System.EventHandler(this.Nuevo2_button_Click);
             // 
             // label12
             // 
@@ -211,14 +213,14 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Especie";
             // 
-            // maskedTextBox1
+            // dCedula_maskedTextBox
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(101, 311);
-            this.maskedTextBox1.Mask = "999-9999999-9";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(166, 22);
-            this.maskedTextBox1.TabIndex = 20;
+            this.dCedula_maskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dCedula_maskedTextBox.Location = new System.Drawing.Point(101, 311);
+            this.dCedula_maskedTextBox.Mask = "999-9999999-9";
+            this.dCedula_maskedTextBox.Name = "dCedula_maskedTextBox";
+            this.dCedula_maskedTextBox.Size = new System.Drawing.Size(166, 22);
+            this.dCedula_maskedTextBox.TabIndex = 20;
             // 
             // label10
             // 
@@ -267,12 +269,12 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Mascota";
             // 
-            // textBox3
+            // dEdad_textBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 266);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 20);
-            this.textBox3.TabIndex = 14;
+            this.dEdad_textBox.Location = new System.Drawing.Point(101, 266);
+            this.dEdad_textBox.Name = "dEdad_textBox";
+            this.dEdad_textBox.Size = new System.Drawing.Size(166, 20);
+            this.dEdad_textBox.TabIndex = 14;
             // 
             // label7
             // 
@@ -284,12 +286,12 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Edad";
             // 
-            // D_textBox
+            // dNombre_textBox
             // 
-            this.D_textBox.Location = new System.Drawing.Point(101, 213);
-            this.D_textBox.Name = "D_textBox";
-            this.D_textBox.Size = new System.Drawing.Size(166, 20);
-            this.D_textBox.TabIndex = 12;
+            this.dNombre_textBox.Location = new System.Drawing.Point(101, 213);
+            this.dNombre_textBox.Name = "dNombre_textBox";
+            this.dNombre_textBox.Size = new System.Drawing.Size(166, 20);
+            this.dNombre_textBox.TabIndex = 12;
             // 
             // label6
             // 
@@ -359,15 +361,15 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox mEspecie_textBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox dCedula_maskedTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox mNombre_textBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox dEdad_textBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox D_textBox;
+        private System.Windows.Forms.TextBox dNombre_textBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
