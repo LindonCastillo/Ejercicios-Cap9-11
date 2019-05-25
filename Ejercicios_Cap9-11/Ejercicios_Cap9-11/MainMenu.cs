@@ -20,8 +20,8 @@ namespace Ejercicios_Cap9_11
 
         private void Ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ejercicio1_Cap9 Ej1_Cap9 = new Ejercicio1_Cap9();
-            Ej1_Cap9.Show();
+            Ejercicio1y3_Cap9 Ejs_Cap9 = new Ejercicio1y3_Cap9();
+            Ejs_Cap9.Show();
         }
 
     }

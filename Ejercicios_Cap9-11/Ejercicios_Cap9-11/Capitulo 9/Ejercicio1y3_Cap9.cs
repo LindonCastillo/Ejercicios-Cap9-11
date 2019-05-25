@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ejercicios_Cap9_11.Capitulo_9
 {
-    public partial class Ejercicio1_Cap9 : Form
+    public partial class Ejercicio1y3_Cap9 : Form
     {
-        public Ejercicio1_Cap9()
+        public Ejercicio1y3_Cap9()
         {
             InitializeComponent();
         }
@@ -32,7 +32,26 @@ namespace Ejercicios_Cap9_11.Capitulo_9
             }
         }
 
-        private void Guardar_button_Click(object sender, EventArgs e)
+        public struct Mascotas
+        {
+            public string NombreMascota;
+            public string Especie;
+
+            public string NombreD;
+            public string Edad;
+            public string Cedula;
+
+            public Mascotas(string pNombreMascota,string pEspecie,string pNombreD,string pEdad,string pCedula)
+            {
+                NombreMascota = pNombreMascota;
+                Especie = pEspecie;
+                NombreD = pNombreD;
+                Edad = pEdad;
+                Cedula = pCedula;
+            }
+        }
+
+        private void Guardar1_button_Click(object sender, EventArgs e)
         {
             if(NombreProducto_textBox.Text == string.Empty|| PrecioProducto_numericUpDown.Value <= 0|| CantidadProducto_numericUpDown.Value <= 0)
             {
@@ -50,19 +69,12 @@ namespace Ejercicios_Cap9_11.Capitulo_9
 
         }
 
-        private void Nuevo_button_Click(object sender, EventArgs e)
+        private void Nuevo1_button_Click(object sender, EventArgs e)
         {
             NombreProducto_textBox.Text = string.Empty;
             PrecioProducto_numericUpDown.Value = 0;
             CantidadProducto_numericUpDown.Value = 0;
         }
-
-        private void MostrarProductos_button_Click(object sender, EventArgs e)
-        {
-            Productos producto = new Productos();
-            Producto_comboBox.Items.Add(producto.ToString());
-        }
-
 
         //Productos[] Producto = new Productos[];
     }
