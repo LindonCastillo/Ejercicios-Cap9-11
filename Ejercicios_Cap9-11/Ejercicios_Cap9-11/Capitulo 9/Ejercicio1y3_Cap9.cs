@@ -17,6 +17,8 @@ namespace Ejercicios_Cap9_11.Capitulo_9
             InitializeComponent();
         }
 
+        int cont1 = 0;
+        int cont2 = 0;
         public struct Productos
         {
             public string Nombre;
@@ -31,6 +33,7 @@ namespace Ejercicios_Cap9_11.Capitulo_9
                 Cantidad = pCantidad;
             }
         }
+        Productos[] Producto = new Productos[50];
 
         public struct Mascotas
         {
@@ -50,9 +53,8 @@ namespace Ejercicios_Cap9_11.Capitulo_9
                 Cedula = pCedula;
             }
         }
+        Mascotas[] Mascota = new Mascotas[50];
 
- 
-        
         private void Limpiar1()
         {
             NombreProducto_textBox.Text = string.Empty;
@@ -91,7 +93,10 @@ namespace Ejercicios_Cap9_11.Capitulo_9
                 int precio = Convert.ToInt32(PrecioProducto_numericUpDown.Value);
                 int cantidad = Convert.ToInt32(CantidadProducto_numericUpDown.Value);
 
-                Productos producto = new Productos(nombre, precio, cantidad);
+                Producto[cont1].Nombre = nombre;
+                Producto[cont1].Precio = precio;
+                Producto[cont1].Cantidad = cantidad;
+                cont1++;
                 Limpiar1();
                 MessageBox.Show("El producto se guardo correctamente", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -112,11 +117,17 @@ namespace Ejercicios_Cap9_11.Capitulo_9
                 string edadD = Convert.ToString(dEdad_textBox.Text);
                 string cedulaD = Convert.ToString(dCedula_maskedTextBox.Text);
 
-                Mascotas mascota = new Mascotas(nombreM,especieM,nombreD,edadD,cedulaD);
+                Mascota[cont2].NombreMascota = nombreM;
+                Mascota[cont2].Especie = especieM;
+                Mascota[cont2].NombreD = nombreD;
+                Mascota[cont2].Edad = edadD;
+                Mascota[cont2].Cedula = cedulaD;
+                cont2++;
                 Limpiar2();
                 MessageBox.Show("La Mascota y su Dueño se guardaron correctamente", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
+
     }
 }

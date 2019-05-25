@@ -62,7 +62,7 @@
             // Nuevo1_button
             // 
             this.Nuevo1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nuevo1_button.Location = new System.Drawing.Point(62, 274);
+            this.Nuevo1_button.Location = new System.Drawing.Point(65, 272);
             this.Nuevo1_button.Name = "Nuevo1_button";
             this.Nuevo1_button.Size = new System.Drawing.Size(95, 32);
             this.Nuevo1_button.TabIndex = 0;
@@ -72,7 +72,7 @@
             // 
             // CantidadProducto_numericUpDown
             // 
-            this.CantidadProducto_numericUpDown.Location = new System.Drawing.Point(175, 165);
+            this.CantidadProducto_numericUpDown.Location = new System.Drawing.Point(178, 174);
             this.CantidadProducto_numericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -84,7 +84,7 @@
             // 
             // PrecioProducto_numericUpDown
             // 
-            this.PrecioProducto_numericUpDown.Location = new System.Drawing.Point(175, 230);
+            this.PrecioProducto_numericUpDown.Location = new System.Drawing.Point(178, 228);
             this.PrecioProducto_numericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -98,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 165);
+            this.label2.Location = new System.Drawing.Point(28, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 16);
             this.label2.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 230);
+            this.label3.Location = new System.Drawing.Point(28, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 16);
             this.label3.TabIndex = 6;
@@ -118,7 +118,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 98);
+            this.label1.Location = new System.Drawing.Point(28, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 7;
@@ -126,7 +126,7 @@
             // 
             // NombreProducto_textBox
             // 
-            this.NombreProducto_textBox.Location = new System.Drawing.Point(175, 100);
+            this.NombreProducto_textBox.Location = new System.Drawing.Point(178, 119);
             this.NombreProducto_textBox.Name = "NombreProducto_textBox";
             this.NombreProducto_textBox.Size = new System.Drawing.Size(166, 20);
             this.NombreProducto_textBox.TabIndex = 8;
@@ -134,7 +134,7 @@
             // Guardar1_button
             // 
             this.Guardar1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardar1_button.Location = new System.Drawing.Point(201, 274);
+            this.Guardar1_button.Location = new System.Drawing.Point(204, 272);
             this.Guardar1_button.Name = "Guardar1_button";
             this.Guardar1_button.Size = new System.Drawing.Size(91, 32);
             this.Guardar1_button.TabIndex = 9;
@@ -317,7 +317,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(353, 356);
+            this.panel2.Size = new System.Drawing.Size(363, 403);
             this.panel2.TabIndex = 17;
             // 
             // Ejercicio1y3_Cap9
