@@ -50,6 +50,19 @@ namespace Ejercicios_Cap9_11.Capitulo_9
 
         }
 
+        private void Nuevo_button_Click(object sender, EventArgs e)
+        {
+            NombreProducto_textBox.Text = string.Empty;
+            PrecioProducto_numericUpDown.Value = 0;
+            CantidadProducto_numericUpDown.Value = 0;
+        }
+
+        private void MostrarProductos_button_Click(object sender, EventArgs e)
+        {
+            Productos producto = new Productos();
+            Producto_comboBox.Items.Add(producto.ToString());
+        }
+
 
         //Productos[] Producto = new Productos[];
     }

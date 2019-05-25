@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ejercicios_Cap9_11.Capitulo_9;
 
 namespace Ejercicios_Cap9_11
 {
@@ -16,5 +17,12 @@ namespace Ejercicios_Cap9_11
         {
             InitializeComponent();
         }
+
+        private void Ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ejercicio1_Cap9 Ej1_Cap9 = new Ejercicio1_Cap9();
+            Ej1_Cap9.Show();
+        }
+
     }
 }
