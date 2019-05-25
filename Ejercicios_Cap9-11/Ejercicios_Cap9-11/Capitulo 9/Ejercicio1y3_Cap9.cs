@@ -129,5 +129,73 @@ namespace Ejercicios_Cap9_11.Capitulo_9
 
         }
 
+        private void LlenarCampos1(int indice)
+        {
+            NombreProducto_textBox.Text = Producto[indice].Nombre;
+            PrecioProducto_numericUpDown.Value = Producto[indice].Precio;
+            CantidadProducto_numericUpDown.Value = Producto[indice].Cantidad;
+        }
+
+        private void LlenarCampos2(int indice)
+        {
+            mNombre_textBox.Text = Mascota[indice].NombreMascota;
+            mEspecie_textBox.Text = Mascota[indice].Especie;
+            dNombre_textBox.Text = Mascota[indice].NombreD;
+            dEdad_textBox.Text = Mascota[indice].Edad;
+            dCedula_maskedTextBox.Text = Mascota[indice].Cedula;
+        }
+
+        private void Buscar1_button_Click(object sender, EventArgs e)
+        {
+            bool existe = false;
+            int ind = 0;
+            string nombreP = Convert.ToString(NombreProducto_textBox.Text); 
+           for(int i=0; i<cont1; i++)
+           {
+                if(nombreP == Producto[i].Nombre)
+                {
+                    existe = true;
+                    ind = i;
+                    break;
+                }
+           }
+
+           if(existe == false)
+           {
+                MessageBox.Show("Este producto no existe", "Fallo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           }
+           else
+           {
+                LlenarCampos1(ind);
+                MessageBox.Show("Se encontro el producto", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           }
+
+        }
+
+        private void Buscar2_button_Click(object sender, EventArgs e)
+        {
+            bool existe = false;
+            int ind = 0;
+            string nombreM = Convert.ToString(mNombre_textBox.Text);
+            for (int i = 0; i < cont1; i++)
+            {
+                if (nombreM == Mascota[i].NombreMascota)
+                {
+                    existe = true;
+                    ind = i;
+                    break;
+                }
+            }
+
+            if (existe == false)
+            {
+                MessageBox.Show("Este dueño y mascota no existe", "Fallo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                LlenarCampos2(ind);
+                MessageBox.Show("Se encontro el dueño y mascota", "Exito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

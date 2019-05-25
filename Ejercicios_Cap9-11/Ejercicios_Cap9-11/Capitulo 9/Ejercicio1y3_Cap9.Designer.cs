@@ -54,9 +54,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Buscar1_button = new System.Windows.Forms.Button();
+            this.Buscar2_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CantidadProducto_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecioProducto_numericUpDown)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Nuevo1_button
@@ -79,7 +82,7 @@
             0,
             0});
             this.CantidadProducto_numericUpDown.Name = "CantidadProducto_numericUpDown";
-            this.CantidadProducto_numericUpDown.Size = new System.Drawing.Size(166, 20);
+            this.CantidadProducto_numericUpDown.Size = new System.Drawing.Size(246, 20);
             this.CantidadProducto_numericUpDown.TabIndex = 2;
             // 
             // PrecioProducto_numericUpDown
@@ -91,7 +94,7 @@
             0,
             0});
             this.PrecioProducto_numericUpDown.Name = "PrecioProducto_numericUpDown";
-            this.PrecioProducto_numericUpDown.Size = new System.Drawing.Size(166, 20);
+            this.PrecioProducto_numericUpDown.Size = new System.Drawing.Size(246, 20);
             this.PrecioProducto_numericUpDown.TabIndex = 3;
             // 
             // label2
@@ -145,6 +148,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.Buscar2_button);
             this.panel1.Controls.Add(this.Guardar2_button);
             this.panel1.Controls.Add(this.Nuevo2_button);
             this.panel1.Controls.Add(this.label12);
@@ -160,9 +164,9 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.dNombre_textBox);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(381, 12);
+            this.panel1.Location = new System.Drawing.Point(440, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(315, 403);
+            this.panel1.Size = new System.Drawing.Size(353, 403);
             this.panel1.TabIndex = 15;
             // 
             // Guardar2_button
@@ -200,7 +204,7 @@
             // 
             this.mEspecie_textBox.Location = new System.Drawing.Point(101, 119);
             this.mEspecie_textBox.Name = "mEspecie_textBox";
-            this.mEspecie_textBox.Size = new System.Drawing.Size(166, 20);
+            this.mEspecie_textBox.Size = new System.Drawing.Size(233, 20);
             this.mEspecie_textBox.TabIndex = 22;
             // 
             // label11
@@ -219,7 +223,7 @@
             this.dCedula_maskedTextBox.Location = new System.Drawing.Point(101, 311);
             this.dCedula_maskedTextBox.Mask = "999-9999999-9";
             this.dCedula_maskedTextBox.Name = "dCedula_maskedTextBox";
-            this.dCedula_maskedTextBox.Size = new System.Drawing.Size(166, 22);
+            this.dCedula_maskedTextBox.Size = new System.Drawing.Size(233, 22);
             this.dCedula_maskedTextBox.TabIndex = 20;
             // 
             // label10
@@ -253,7 +257,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(138, 164);
+            this.label9.Location = new System.Drawing.Point(149, 160);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 25);
             this.label9.TabIndex = 16;
@@ -273,7 +277,7 @@
             // 
             this.dEdad_textBox.Location = new System.Drawing.Point(101, 266);
             this.dEdad_textBox.Name = "dEdad_textBox";
-            this.dEdad_textBox.Size = new System.Drawing.Size(166, 20);
+            this.dEdad_textBox.Size = new System.Drawing.Size(233, 20);
             this.dEdad_textBox.TabIndex = 14;
             // 
             // label7
@@ -290,7 +294,7 @@
             // 
             this.dNombre_textBox.Location = new System.Drawing.Point(101, 213);
             this.dNombre_textBox.Name = "dNombre_textBox";
-            this.dNombre_textBox.Size = new System.Drawing.Size(166, 20);
+            this.dNombre_textBox.Size = new System.Drawing.Size(233, 20);
             this.dNombre_textBox.TabIndex = 12;
             // 
             // label6
@@ -315,16 +319,39 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.Buscar1_button);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(363, 403);
+            this.panel2.Size = new System.Drawing.Size(422, 403);
             this.panel2.TabIndex = 17;
+            // 
+            // Buscar1_button
+            // 
+            this.Buscar1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar1_button.Location = new System.Drawing.Point(336, 100);
+            this.Buscar1_button.Name = "Buscar1_button";
+            this.Buscar1_button.Size = new System.Drawing.Size(74, 26);
+            this.Buscar1_button.TabIndex = 10;
+            this.Buscar1_button.Text = "Buscar";
+            this.Buscar1_button.UseVisualStyleBackColor = true;
+            this.Buscar1_button.Click += new System.EventHandler(this.Buscar1_button_Click);
+            // 
+            // Buscar2_button
+            // 
+            this.Buscar2_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar2_button.Location = new System.Drawing.Point(273, 61);
+            this.Buscar2_button.Name = "Buscar2_button";
+            this.Buscar2_button.Size = new System.Drawing.Size(61, 26);
+            this.Buscar2_button.TabIndex = 26;
+            this.Buscar2_button.Text = "Buscar";
+            this.Buscar2_button.UseVisualStyleBackColor = true;
+            this.Buscar2_button.Click += new System.EventHandler(this.Buscar2_button_Click);
             // 
             // Ejercicio1y3_Cap9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 450);
+            this.ClientSize = new System.Drawing.Size(818, 434);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Guardar1_button);
             this.Controls.Add(this.NombreProducto_textBox);
@@ -342,6 +369,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PrecioProducto_numericUpDown)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +403,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Guardar2_button;
         private System.Windows.Forms.Button Nuevo2_button;
+        private System.Windows.Forms.Button Buscar2_button;
+        private System.Windows.Forms.Button Buscar1_button;
     }
 }
