@@ -39,7 +39,8 @@ namespace Ejercicios_Cap9_11.Capitulo_10
         private void Limpiar()
         {
             Nombre_textBox.Text = string.Empty;
-            
+            Edad_numericUpDown.Value = 0;
+
         }
         private void Nuevo_button_Click(object sender, EventArgs e)
         {
